@@ -1,0 +1,32 @@
+npx create-react-app github-explorer --template typescript
+
+primeiro vc cria o projeto, depois instalei o react-router-dom e dpois instalei npm i @types/react-router-dom 
+
+Criei as pastas para separar, fiz um arquivo rotas na pasta rotas assim
+const RoutesApp: React.FC = () => (
+    <Routes>
+        <Route path='/' element={<DashBoard />} />
+    </Routes>
+)
+
+e dpois fiz deixei o arquivo app.tsx na pasta principal dessa forma:
+const App: React.FC = () => {
+  return (
+    <BrowserRouter>
+    <RoutesApp />
+    </BrowserRouter>
+  );
+}
+
+depois aprendi a usar o styled components, instalei eles npm install --save styled-components e npm i @types/styled-components
+para criar as pastas vc faz o styles.ts em cada pagina, dpois se achar mais facil criar uma pasta styles e fazer o global.ts, ai vc cria uma variavel com letra maiuscula e coloca entre `` a estilização
+
+ele instalou o polished, mas sinceramente vc n vê tanta utilidade ainda,
+
+dpois o react-icons
+
+colocou o item e pronto, primeira parte,
+
+agora pra construir a API pegando direto do site, npm i axios logo de cara
+
+Você montou toda a estrutura pra fazer a requisição, ta na hora de salvar os modelos de como ficou para utilizar no futuro de exemplo.
